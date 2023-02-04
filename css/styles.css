@@ -28,7 +28,7 @@ body{
   .product-card {
     display: flex;
     background-color: white;
-    margin: 20vh auto;
+    margin: 15vh auto 10px auto;
     border-radius: 10px;
     flex-direction: row;
     width: 40vw;
