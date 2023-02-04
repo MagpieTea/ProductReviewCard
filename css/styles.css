@@ -1,0 +1,186 @@
+body{
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;  
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+/* vw and vh used throughout to make text responsive to the viewpoint size. */
+
+/* these parts are the same for both viewpoints of the item */
+
+.btn:hover{
+  cursor: pointer;
+}
+.btn:active{
+  background-color: hsl(158, 36%, 20%);
+}
+#cart-img{
+  margin: auto 5%;
+  height: 45%;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* How do I get my .product-info to shrink and scale to its div when the window resizes? responsive typography!*/
+/* These parts are only true for when the viewer is a viewport with equal to or greater than 800px.  I used 800 because that seemed like the breaking point.*/
+@media (min-width: 800px){
+
+  .product-card {
+    display: flex;
+    background-color: white;
+    margin: 20vh auto;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 40vw;
+    height: auto;
+    
+         
+  }
+/* this makes the image fill up the height of the div, and  */
+  .product-img-1440{
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+  /* this line is in case the image doesn't load, there will just be a white box. */
+    background-color: white;
+         
+  }
+  .product-img-375{
+    display: none;
+  }
+  .product-info{
+   margin: 5%; 
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   
+   
+  }
+  #perfume-heading{
+    font-size: .75vw;
+    opacity: 40%
+               
+  }
+  #perfume-name{
+    font-family: 'Fraunces', serif;
+    font-size: 2vw;
+    line-height: 1;
+    color: black;
+  }
+  #perfume-blurb{
+    opacity: 60%;
+    font-size: 1vw;
+  }
+  .prices{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  #price-new{
+    font-size: 2vw;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+  }
+  #price-old{
+    
+    text-decoration: line-through;
+    font-size: 1vw;
+    margin: auto ;
+    
+  }
+  .btn{
+    width: 100%;
+    height: 3.75rem;
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    font-size: 1vw;
+    border: none;
+    /* these lines allow the cart and "add to cart" text to be centered vertically and horizontally */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+       
+  }
+}
+/* These parts are only true for when the viewer has a screen width less than 800px. */
+@media (max-width: 799px) {
+  .product-card {
+    display: flex;
+    background-color: white;
+    margin: 5vh 2vw;
+    border-radius: 10px;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+         
+  }
+/* this makes the image fill up the height of the div, and  */
+  .product-img-1440{
+    display: none;
+        
+  }
+  .product-img-375{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  /* this line is in case the image doesn't load, there will just be a white box. */
+    background-color: white;
+  }
+
+  .product-info{
+    height: 100%;
+    margin: 5%;  
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    
+  }
+  #perfume-heading{
+    font-size: 2vh;
+    opacity: 40%
+  }
+  #perfume-name{
+    font-family: 'Fraunces', serif;
+    font-size: 4vh;
+    line-height: 1;
+  }
+  #perfume-blurb{
+    opacity: 60%;
+    font-size: 2vh;
+  }
+  .prices{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  #price-new{
+    font-size: 4vh;
+    margin: 2% auto 2% 0;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+  }
+  #price-old{
+    
+    text-decoration: line-through;
+    font-size: 2vh;
+    margin: auto auto auto 0;
+    
+  }
+  .btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    font-size: 2vh;
+    border: none;
+    /* these lines allow the cart and "add to cart" text to be centered vertically and horizontally */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+       
+  }
+}
