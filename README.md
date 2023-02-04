@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MagpieTea/ProductReviewCard.git)
-- Live Site URL: [Add live site URL here](https://magpietea.github.io/ProductReviewCard/)
+- Solution URL: [Solution URL](https://github.com/MagpieTea/ProductReviewCard.git)
+- Live Site URL: [Live-Site URL](https://magpietea.github.io/ProductReviewCard/)
 
 ## My process
 
@@ -55,7 +55,7 @@ I was really stuck on how to make the image and text side-by-side and take up th
 ```html
  <div class="product-card">
 ```
-this was the line that make it finally work, because once I understood they were both just items in a box, adding this extra div-layer, I was able to make it happen (with the css below).
+this was the line that make it finally work, because once I understood they were both just items in a box. By adding this extra div-layer, I was able to make it happen (with the css below).
 ```css
 .product-card {
     display: flex;
