@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.JPG)
+![](./images/css.screenshot.png)
+![](./images/html.screenshot.png)
 
 
 
