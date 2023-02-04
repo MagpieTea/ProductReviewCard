@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/MagpieTea/ProductReviewCard.git)
+- Live Site URL: [Add live site URL here](https://magpietea.github.io/ProductReviewCard/)
 
 ## My process
 
@@ -45,61 +45,57 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project really brought flexbox to life for me. I realized how often it can be used to organize items visually, and make them behave in a way I want them to without having to game the system with margin or padding. I had some really strong ah-ha moments with structure and layering of divs that really pulled this project together.
 
-To see how you can add code snippets, see below:
-
+I was really stuck on how to make the image and text side-by-side and take up the same amount of space without actually knowing how wide they were. 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <div class="product-card">
 ```
+this was the line that make it finally work, because once I understood they were both just items in a box, adding this extra div-layer, I was able to make it happen (with the css below).
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+.product-card {
+    display: flex;
+    background-color: white;
+    margin: 20vh auto;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 40vw;
+    height: auto;
+    
+         
+  }
+  ```
+
+I learned so much about responsive typography while researching for this project. In retrospect I probably did not need it to be so responsive, and could have just set pixel widths for most things, but I am proud of how well I was able to implement responsivity into this project, so in the end I left it in.
+
+I learned about @media queries too, and I was thrilled to learn I could change the view based on the device that was being used by the user! Of course I knew this was possible in theory, having experienced it as a user, but knowing the process by which it happens is awesome.
+
+```css
+@media (min-width: 800px){
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+The original README provided with this project mentioned CSS grid, which I was not familiar with and did not use, so I will research that and consider how it would have changed how I coded this project. I would also like to understand why align-self and justify-self never seem to work in the way I intend them. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I used mdn primarily for my research, and read a lot about display and flexbox, and @media.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Margaret Thurman](https://magpietea.github.io/cv/)
+- Frontend Mentor - [@MagpieTea](https://www.frontendmentor.io/profile/MagpieTea)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Shout out to my partner on this journey toward development, my best friend and husband [NeonGliiitch](https://github.com/neonGliiitch)
