@@ -28,9 +28,9 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
-
-![](./images/css.screenshot.png)
 ![](./images/html.screenshot.png)
+![](./images/css.screenshot.png)
+
 
 
 
